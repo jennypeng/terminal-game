@@ -2,24 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>lonely_boy.exe</title>
+    <title></title>
     <script src="../js/jquery-1.7.1.min.js"></script>
     <script src="../js/jquery.mousewheel-min.js"></script>
     <script src="../js/jquery.terminal-0.8.7.js"></script>
+    <script src="terminal.js"></script>
     <link href="../css/jquery.terminal.css" rel="stylesheet"/>
-    <script>
-    jQuery(document).ready(function($) {
-        $('body').terminal(function(command, term) {
-        term.echo("Welcome");
-        if (command == 'test') {
-            term.echo("you just typed 'test'");
-        } else {
-            term.echo('unknown command');
-        }
-    }, { prompt: '>', name: 'test' });
-    });
-
-    </script>
   </head>
 <body>
+    <div id = "terminal">
+    </div>
 </body>
